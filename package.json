@@ -1,6 +1,6 @@
 {
   "name": "sayu-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A minimal, modular and editorial UI component library built with HTML, SCSS, and compiled CSS.",
   "license": "MIT",
   "homepage": "https://pixel-waffless.github.io/SayUI/",

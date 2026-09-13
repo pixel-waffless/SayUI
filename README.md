@@ -2,11 +2,13 @@
 
 > A minimal, modular, framework-agnostic UI component library built with HTML, SCSS, and compiled CSS.
 
-[![Version](https://img.shields.io/badge/version-1.0.1-red)](package.json)
+[![Repository version](https://img.shields.io/badge/repository-1.0.2-red)](package.json)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Status](https://img.shields.io/badge/status-stable%20v1-blue)](https://github.com/pixel-waffless/SayUI)
 
 SayUI provides documented HTML contracts and a visual layer for editorial pages, blogs, documentation, and content-driven interfaces. It has no framework runtime, router, CMS, or JavaScript behavior dependency.
+
+The repository is prepared for `1.0.2`. The latest version currently published on npm remains `1.0.1` until the `v1.0.2` release is deliberately tagged and published.
 
 > **About the name**
 >
