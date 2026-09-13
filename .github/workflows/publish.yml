@@ -26,8 +26,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify tag matches package version
+        shell: bash
+        run: |
+          expected="v$(node -p "require('./package.json').version")"
+          test "$GITHUB_REF_NAME" = "$expected"
+
       - name: Build
         run: npm run build
+
+      - name: Validate public HTML and static accessibility
+        run: npm run validate:html
 
       - name: Audit dependencies
         run: npm audit --audit-level=high

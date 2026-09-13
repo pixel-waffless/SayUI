@@ -4,7 +4,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.0.1-red)](package.json)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Status](https://img.shields.io/badge/status-internal%20v1-blue)](https://github.com/pixel-waffless/SayUI/blob/SayUI/docs/releases/sayui-internal-v1.md)
+[![Status](https://img.shields.io/badge/status-stable%20v1-blue)](https://github.com/pixel-waffless/SayUI)
 
 SayUI provides documented HTML contracts and a visual layer for editorial pages, blogs, documentation, and content-driven interfaces. It has no framework runtime, router, CMS, or JavaScript behavior dependency.
 
@@ -98,7 +98,7 @@ node_modules/sayu-ui/docs/components/
 
 ## Public Primitives
 
-SayUI Internal v1 includes these 17 reusable primitives and editorial/content components:
+SayUI v1 includes these 17 reusable primitives and editorial/content components:
 
 - `ui-section-header`
 - `ui-eyebrow`
@@ -126,7 +126,7 @@ SayUI also includes original public editorial compositions such as topbars, bann
 - `ui-trending-list`, `ui-social-links`, `ui-section-header`, and `ui-pullquote` should be validated in their final width or surface.
 - `ui-author-card` remains experimental as a migration target for the existing article-sidebar author block, though it can be used independently.
 
-See the [Component Coexistence Matrix](https://github.com/pixel-waffless/SayUI/blob/SayUI/docs/component-coexistence.md) for the complete adoption policy.
+See the [Component Coexistence Matrix](docs/component-coexistence.md) for the complete adoption policy.
 
 ## Demo
 
@@ -148,10 +148,10 @@ The blog pages are static consumer compositions. Demo form actions such as `/com
 
 ## Development
 
-Install the project toolchain:
+Install the project toolchain reproducibly with Node.js 20:
 
 ```bash
-npm install
+npm ci
 ```
 
 Build both distribution bundles:
@@ -165,6 +165,8 @@ Other commands:
 ```bash
 npm run build:css
 npm run build:min
+npm run validate:html
+npm test
 npm run watch
 ```
 
@@ -186,9 +188,16 @@ The npm package intentionally includes:
 - Layout HTML and SCSS sources.
 - Foundation and bundle SCSS sources.
 - Component contracts and usage documentation.
+- Generated, repository-owned SVG placeholders referenced by the published HTML examples.
 - `README.md`, `LICENSE`, and `package.json`.
 
-Repository demos, screenshots, documentation images, and project-only assets are excluded from the npm package.
+Repository demos and project-only styles are excluded from the npm package. The two generated SVG placeholders used by the deliberately published HTML examples are included under `src/assets/`.
+
+## Accessibility and browser expectations
+
+SayUI favors semantic HTML, visible keyboard focus, accessible names, useful image alternatives, and reduced-motion support. Consumers remain responsible for application behavior, content, contrast in custom themes, and end-to-end accessibility testing.
+
+The compiled CSS targets current evergreen browsers. Sass consumers should use the exported `sayu-ui/scss` entry rather than relying on undocumented internal paths.
 
 ## License
 

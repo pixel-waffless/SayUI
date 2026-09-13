@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title description">
+  <title id="title">Abstract profile placeholder</title>
+  <desc id="description">A neutral profile silhouette on a warm geometric background.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2d7c7"/>
+      <stop offset="1" stop-color="#dba252"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#background)"/>
+  <circle cx="200" cy="154" r="78" fill="#26343d"/>
+  <path d="M64 400c8-101 61-166 136-166s128 65 136 166Z" fill="#26343d"/>
+  <circle cx="326" cy="78" r="42" fill="#a51f36"/>
+</svg>

@@ -6,7 +6,7 @@ The blog owns routing, data loading, page shells, global navigation, search beha
 
 This plan does not authorize migration of original SayUI components and does not introduce new components, generic grids, generic cards, category lists, comment lists, or a general form system.
 
-The actionable page structures, zones, ownership boundaries, and implementation order are defined in the [Blog Construction Blueprint](blog-blueprint.md).
+The actionable page structures, zones, ownership boundaries, and implementation order are preserved in the historical [Blog Construction Blueprint](history/blog-blueprint.md).
 
 ## Blog Demo Closure
 

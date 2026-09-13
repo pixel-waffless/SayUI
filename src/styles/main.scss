@@ -44,6 +44,16 @@
 @use '../components/article/ui-article-sidebar/ui-article-sidebar.scss';
 @use '../components/article/ui-article-related/ui-article-related.scss';
 
+@media (prefers-reduced-motion: reduce) {
+  [class^='ui-'],
+  [class*=' ui-'] {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 a[class^="ui-"]:focus-visible,
 a[class*=" ui-"]:focus-visible,
 button[class^="ui-"]:focus-visible,

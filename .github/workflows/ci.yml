@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
@@ -27,6 +30,9 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Validate public HTML and static accessibility
+        run: npm run validate:html
 
       - name: Audit dependencies
         run: npm audit --audit-level=high

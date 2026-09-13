@@ -295,7 +295,7 @@ Original components remain first-class public compositions rather than legacy co
 
 P5.1 is now complete. Its comparative evaluation produced 9 `Migrable` results, 1 `Experimental` result, and 0 `No migrar` results. These classifications represent future adoption viability only: no original component has been replaced and no migration has been executed.
 
-`ui-author-card` remains experimental against the author block inside `ui-article-sidebar`. Components without an official P5.1 comparison remain independent and unclassified for adoption. The complete results and limitations are recorded in the [P5 Comparative Evaluation Plan](p5-comparison-plan.md) and [Component Coexistence Matrix](component-coexistence.md).
+`ui-author-card` remains experimental against the author block inside `ui-article-sidebar`. Components without an official P5.1 comparison remain independent and unclassified for adoption. The complete results and limitations are recorded in the [P5 Comparative Evaluation Plan](history/p5-comparison-plan.md) and [Component Coexistence Matrix](component-coexistence.md).
 
 ### P5.2 Closure
 
@@ -321,6 +321,6 @@ Copyable documentation and the reusable-components demo use real or representati
 
 ## Consumer Blog Architecture
 
-The implemented page map and primitive-consumption plan for the blog are documented separately in [Blog Architecture](blog-architecture.md) and [Blog Construction Blueprint](blog-blueprint.md).
+The implemented page map and primitive-consumption plan for the blog are documented separately in [Blog Architecture](blog-architecture.md) and the historical [Blog Construction Blueprint](history/blog-blueprint.md).
 
 That plan belongs to the consumer project. It does not add routing, page templates, search behavior, generic grids, generic cards, or application concerns to SayUI, and it does not authorize migration of original components.
