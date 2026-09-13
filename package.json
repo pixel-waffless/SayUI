@@ -25,13 +25,15 @@
   "sass": "./src/styles/main.scss",
   "files": [
     "dist/",
+    "src/assets/",
     "src/components/",
     "src/layouts/",
     "src/styles/",
     "docs/components/",
     "docs/components.md",
     "docs/article-components.md",
-    "docs/usage-rules.md"
+    "docs/usage-rules.md",
+    "CHANGELOG.md"
   ],
   "exports": {
     ".": "./dist/css/sayui.css",
@@ -49,6 +51,9 @@
     "build:css": "sass src/styles/main.scss dist/css/sayui.css",
     "watch": "sass src/styles/main.scss dist/css/sayui.css --watch",
     "build:min": "sass src/styles/main.scss dist/css/sayui.min.css --style=compressed",
+    "validate:html": "node scripts/validate-html.mjs",
+    "test": "npm run validate:html",
+    "check": "npm run build && npm run validate:html",
     "prepack": "npm run build"
   },
   "devDependencies": {

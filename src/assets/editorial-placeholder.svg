@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+  <title id="title">Abstract editorial composition</title>
+  <desc id="description">Geometric blocks and circles in red, cream, charcoal, and gold.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6ede3"/>
+      <stop offset="1" stop-color="#e8c7b5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#9e1b32"/>
+      <stop offset="1" stop-color="#e64a3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#background)"/>
+  <rect x="72" y="72" width="600" height="656" rx="24" fill="#18252f"/>
+  <circle cx="860" cy="270" r="190" fill="url(#accent)"/>
+  <path d="M730 728 970 420l180 308Z" fill="#d6a24a"/>
+  <rect x="144" y="152" width="456" height="24" rx="12" fill="#f6ede3" opacity=".88"/>
+  <rect x="144" y="208" width="328" height="24" rx="12" fill="#f6ede3" opacity=".55"/>
+  <rect x="144" y="560" width="392" height="96" rx="16" fill="#9e1b32"/>
+</svg>

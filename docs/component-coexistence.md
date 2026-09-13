@@ -172,4 +172,4 @@ Real migrations remain blocked until all of the following happen:
 
 P5.1 is closed for comparative demos and official classification. P5.2 is closed for responsive and contextual technical review. Any later migration remains blocked until a specific migration contract and implementation scope are explicitly approved.
 
-The official P5.1 results, evaluation criteria, untested components, and executed lots are documented in [P5 Comparative Evaluation Plan](p5-comparison-plan.md).
+The official P5.1 results, evaluation criteria, untested components, and executed lots are documented in the historical [P5 Comparative Evaluation Plan](history/p5-comparison-plan.md).
